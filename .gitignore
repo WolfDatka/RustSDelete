@@ -1,5 +1,7 @@
 /target
 /testing
+/Output
 
 /SDelete/Eula.txt
 /SDelete/sdelete.exe
+installScript.iss
