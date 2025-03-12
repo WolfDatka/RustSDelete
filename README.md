@@ -1,11 +1,11 @@
-# This is just a simple way to use SDelete on files and folders from the conetext menu.
+# This is just a simple way to utalize SDelete on files and folders using the conetext menu.
 
 ## What is SDelete
-  SDelete is a part of Sysinternals which deletes files/folders so they are unrecoverable.
+  SDelete is a part of Sysinternals, which deletes files/folders so they are unrecoverable.
   
-  ### How does it delete so the files/folders are unrecoverable
-    Usually when you delete a file it's just removed from a list which stores where everything starts and how long they are. If someone wants to recover a file after they deleted it they can use many program which can recover files.
-    SDelete doesn't just delete the entry, but first writes random data over the file/folder so even if someone knows where the file/folder was there'll be rubbish data, which can't even be recovered by advanced recovery techniques.
+  ### How does it delete so that the files/folders are unrecoverable
+    Usually when you delete a file it's just removed from a list, which stores where that file starts, or what the folder contains. If someone wants to recover a file after it's deleted, there are many programs, which can recover files.
+    SDelete doesn't just delete the entry, but first writes random data over the file/folder so even if someone knows where the file/folder was there'll be rubbish data there, which can't even be recovered by advanced recovery techniques.
     In the release I set 10 passes (the data will be overwritten 10 times by random data) which is pleanty, I read that 3 letter agencies use 7 usually.
 
 ## How to use it from src
@@ -19,9 +19,11 @@
   
   ### Manual process:
     1. Open a terminal in the main dir ("RustSDelete") and run "cargo build --release"
-    2. Make a dir in the "C:/" called "RustSDelete" and copy or move the "RustSDelete.exe" from the "RustSDelete/target/release" dir to there.
-    3. Make a dir in the "C:/" called "SDelete" and extract the zip from the "RustSDelete/SDelete" to there.
-    4. Run the registry file in the "RustSDelete/registry" dir
+    2. Make a dir in the "C:" called "RustSDelete"
+    3. Copy or move the "RustSDelete.exe" from the "RustSDelete/target/release" dir -> to the "RustSDelete" at "C:"
+    4. Make a dir in the "C:/RustSDelete" dir, called "SDelete" and extract the contents of the zip from the "RustSDelete/SDelete" to there
+    5. Run the registry file in the "RustSDelete/registry" dir
 
   Try it (right click on files/folders in the file explorer and find "RustSDelete" in the context menu and click it) on files/folders you don't need or copy files and try it on thoes, if there're any issues report them or solve them I guess...
   You can delete multiple file/folder (s) by just selecting multiple by dragging or using shift or ctrl
+  !!! BE VERY CAREFUL, WHAT YOU DELETE IS JUST ABOUT AS UNRECOVERABLE AS THEY CAN BE !!!
