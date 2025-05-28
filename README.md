@@ -1,5 +1,7 @@
 # This is just a simple way to utalize SDelete on files and folders using the conetext menu. (Windows only)
-(I made this because I thought there isn't a GUI for it, but I recently heard that there actually is, so you may want to try that first)
+    (I made this because I thought there isn't a GUI for it, but I recently heard that there actually is, so you may want to try that first)
+
+# !!! Be avare that this only works on HDDs and will reduce the lifespan of SSDs somewhat significantly !!!
 
 ## What is SDelete
 SDelete is a part of Sysinternals, which deletes files/folders so they are unrecoverable.
@@ -9,8 +11,6 @@ Usually when you delete a file it's just removed from a list, which stores where
 
 SDelete doesn't just delete the entry, but first writes random data over the file/folder so even if someone knows where the file/folder was there'll be rubbish data there, which can't even be recovered by advanced recovery techniques.
     In the release I set 10 passes (the data will be overwritten 10 times by random bytes) which is VERY overkill, 3 passes should be pleanty.
-
-!!! Be avare that this only works on HDDs and will reduce the lifespan of SSDs somewhat significantly !!!
 
 ## How to use it from src
 ### Requiments:
