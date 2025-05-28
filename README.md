@@ -1,7 +1,6 @@
 # This is just a simple way to utalize SDelete on files and folders using the conetext menu. (Windows only)
-  (I made this because I thought there isn't a GUI for it, but I recently heard that there actually is, so you may want to try that first)
-
-# !!! Be avare that this only works on HDDs and will reduce the lifespan of SSDs somewhat significantly !!!
+### (I made this because I thought there isn't a GUI for it, but I recently heard that there actually is, so you may want to try that first)
+### !!! Be avare that this only works on HDDs and will reduce the lifespan of SSDs somewhat significantly !!!
 
 ## What is SDelete
 SDelete is a part of Sysinternals, which deletes files/folders so they are unrecoverable.
